@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CONTACT US</h1>
+    <form action="app.js" method="POST">
+    <div> 
+        <label for="name">Name:</label>
+         <input placeholder="Enter your name" required type="text" name="username" id="name"/></div><br/>
+      <div>Email: <input placeholder="Enter your email" required type="email" name="usermail" id="email"/></div><br/>
+      <div>Message: <textarea placeholder="Enter your message" required name="usermessage" id="message" cols="60" rows="10"></textarea></div><br/>
+      <div>Number: <input required type="number" name="usernumber" id="number"/></div><br/>
+      <div>Gender:<select required name="usergender" id="gender">
+            <option value="">chooose one </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="transgender">Transgender</option>
+        </select></div><br>
+        <div class="checky">
+            Frontend: <input type="chedckbox" name="skills" id="frontend">
+            Backend: <input type="checkbox" name="skills" id="backend">
+        </div><br>
+        <fieldset>
+            <legend>Mode of payment</legend>
+            Cash: <input type="radio" name="payment" id="cash">
+            Bank: <input type="radio" name="payment" id="bank">
+        </fieldset><br>
+        <div>Password: <input required type="password" name="password" id="password"></div><br>
+                       <input type="submit" value="submit">
+
+            </form>
+      
+</body>
+</html>
